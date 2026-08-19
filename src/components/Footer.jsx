@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import rabbitIcon from '../assets/rabbit-icon.jpg'
 
 const links = [
   { to: '/', label: 'Home', idx: '00' },
@@ -12,7 +13,9 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-inner">
         <div className="footer-brand">
-          <span className="logo-mark">AV</span>
+          <span className="logo-mark">
+            <img src={rabbitIcon} alt="" className="logo-img" />
+          </span>
           <p className="sys-label">Diplomat // International Relations</p>
         </div>
         <nav className="footer-links">

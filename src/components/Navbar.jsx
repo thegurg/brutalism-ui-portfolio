@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import rabbitIcon from '../assets/rabbit-icon.jpg'
 
 const links = [
   { to: '/', label: 'Home', idx: '00' },
@@ -23,7 +24,9 @@ export default function Navbar() {
     <header className={`navbar ${scrolled ? 'is-scrolled' : ''}`}>
       <div className="navbar-inner">
         <Link to="/" className="logo" onClick={() => setOpen(false)} aria-label="Home">
-          <span className="logo-mark">AV</span>
+          <span className="logo-mark">
+            <img src={rabbitIcon} alt="" className="logo-img" />
+          </span>
         </Link>
         <nav className={open ? 'nav-links is-open' : 'nav-links'}>
           {links.map((link) => (

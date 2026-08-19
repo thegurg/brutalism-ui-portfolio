@@ -46,7 +46,7 @@ export default function About() {
                   <img src={aboutPage} alt="Portrait" className="portrait-img" loading="lazy" />
                 </div>
                 <div className="portrait-id">
-                  <span className="sys-label">ID::AV // Sector_07</span>
+                  <span className="sys-label">ID::RABBIT // Sector_07</span>
                   <span className="card-index">[010]</span>
                 </div>
               </Frame>

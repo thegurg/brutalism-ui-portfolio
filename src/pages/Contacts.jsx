@@ -1,5 +1,6 @@
 import Reveal from '../components/Reveal'
 import Frame from '../components/Frame'
+import handsImg from '../assets/hands.jpg'
 
 const contacts = [
   { label: 'Email', value: 'somebullshit@email.com', href: 'mailto:somebullshit@email.com' },
@@ -15,16 +16,20 @@ const socials = [
 export default function Contacts() {
   return (
     <div className="page">
-      <section className="page-hero scanlines">
-        <div className="container">
-          <Reveal>
-            <p className="sys-label" style={{ marginBottom: '16px' }}>
-              [Channel // Contact_001]
-            </p>
-            <h1 className="page-title">Let's connect</h1>
-          </Reveal>
-        </div>
-      </section>
+      <div className="hands-bg" aria-hidden="true">
+        <img src={handsImg} alt="" className="hands-bg-img" />
+      </div>
+      <div className="page-content">
+        <section className="page-hero scanlines">
+          <div className="container">
+            <Reveal>
+              <p className="sys-label" style={{ marginBottom: '16px' }}>
+                [Channel // Contact_001]
+              </p>
+              <h1 className="page-title">Let's connect</h1>
+            </Reveal>
+          </div>
+        </section>
 
       <section className="section">
         <div className="container">
@@ -91,6 +96,7 @@ export default function Contacts() {
           </div>
         </div>
       </section>
+      </div>
     </div>
   )
 }

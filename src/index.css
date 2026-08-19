@@ -310,15 +310,22 @@ img {
   width: 40px;
   height: 40px;
   border: 1px solid var(--line-strong);
-  font-family: var(--mono);
-  font-size: 14px;
-  color: var(--text);
-  transition: background 0.2s ease, color 0.2s ease;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: border-color 0.2s ease;
 }
 
-.logo:hover .logo-mark {
-  background: var(--text);
-  color: var(--bg);
+.logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.logo:hover .logo-img {
+  filter: brightness(1.25);
+  transform: scale(1.05);
 }
 
 .nav-links {
@@ -1009,6 +1016,30 @@ img {
   align-self: flex-start;
 }
 
+/* ---------- Hands background (contacts) ---------- */
+
+.hands-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hands-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: screen;
+  opacity: 0.16;
+  filter: grayscale(1);
+}
+
+.page-content {
+  position: relative;
+  z-index: 1;
+}
+
 /* ---------- Footer ---------- */
 
 .footer {
@@ -1156,6 +1187,10 @@ img {
 
   .contacts-grid {
     grid-template-columns: 1fr;
+  }
+
+  .hands-bg-img {
+    opacity: 0.1;
   }
 }
 
