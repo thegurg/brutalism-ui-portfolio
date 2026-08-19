@@ -24,7 +24,7 @@ export default function Footer() {
         </nav>
         <div className="footer-meta">
           <span className="sys-label">[END_OF_TRANSMISSION]</span>
-          <p className="footer-copy">© {new Date().getFullYear()} Alexander Volkov</p>
+          <p className="footer-copy">© {new Date().getFullYear()} Oripov Safarali</p>
         </div>
       </div>
     </footer>

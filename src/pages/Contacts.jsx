@@ -2,8 +2,8 @@ import Reveal from '../components/Reveal'
 import Frame from '../components/Frame'
 
 const contacts = [
-  { label: 'Email', value: 'a.volkov@example.com', href: 'mailto:a.volkov@example.com' },
-  { label: 'Phone', value: '+7 (900) 000-00-00', href: 'tel:+79000000000' },
+  { label: 'Email', value: 'somebullshit@email.com', href: 'mailto:somebullshit@email.com' },
+  { label: 'Phone', value: '+1 (234) 567-78-90', href: 'tel:+1234567890' },
 ]
 
 const socials = [
